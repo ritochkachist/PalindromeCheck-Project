@@ -1,0 +1,31 @@
+In your main program, write a function called PalindromeCheck that can be used to check a String to see if it is a Palindrome.  A palindrome is a word or phrase that reads the same forwards and backwards. For example: 
+
+Radar
+
+or
+
+"a man a plan a canal panama"
+
+In your main program, you will ask the user to enter a String.  This String will be sent to the function you wrote to determine if it is a palindrome.  To simplify things a little, you can assume that we will not enter any punctuation with our Strings.
+
+The rules for the recursive algorithm is: 
+
+if the string has 0 or 1 characters, the answer is "true" (base case)
+
+else, if the first and last characters are different, the answer is "false" (base case)
+
+else, the answer depends on a recursive call to check if the substring between the first and last characters is a palindrome. (general case)
+_____________________________________
+
+The main part of your program should continue (loop) to ask the user to enter Strings and immediately tell them if their String is a palindrome or not. 
+
+You will use methods of the String class to manipulate your Strings, so visit the Python documentation online to get the documentation for the String class.
+
+***Some useful String methods include:***
+
+myString.strip( ) – returns a String with the same characters as the calling object String, but without leading or trailing spaces.  We should strip the string when we come into the recursive method to remove leading or trailing spaces.
+
+myString.lower( ) – we cannot compare A and a, so we must convert the string to a single case. ex: myString = myString.lower()
+
+len(myString) – returns the length of the string
+
